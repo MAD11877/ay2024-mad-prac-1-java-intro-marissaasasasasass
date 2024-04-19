@@ -1,5 +1,6 @@
 import java.util.Scanner;
-
+import java.util.ArrayList;
+import java.util.Collections;
 public class Question5
 {
   public static void main(String[] args)
@@ -27,6 +28,48 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
-  }
+
+    ArrayList<Integer> data = new ArrayList<>();
+
+    System.out.print("Length of list: ");
+    int length = in.nextInt();
+
+    for (int i=0; i<length; i++)
+    {
+      System.out.print("Number: ");
+      int number = in.nextInt();
+      data.add(number);
+    }
+
+        // Sorting the ArrayList
+        Collections.sort(data);
+
+        // Finding the mode (number with the highest occurrence)
+        int mode = data.get(0);
+        int previous = 1;
+        int count = 1;
+        for (int i = 1; i < length; i++) {
+            if (data.get(i).equals(data.get(i - 1))) 
+            {
+                count++;
+            } 
+            else 
+            {
+                if (count> previous) 
+                {
+                    previous = count;
+                    mode = data.get(i - 1);
+                }
+                count = 1;
+            }
+        }
+
+        // Check for the mode in case it is the last element in the list
+        if (count > previous) 
+        {
+            mode = data.get(length - 1);
+        }
+
+        System.out.println("Mode: " + mode);
+    }
 }
