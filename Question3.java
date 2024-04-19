@@ -12,5 +12,12 @@ public class Question3
      
     Scanner in = new Scanner(System.in);
     
+    System.out.println("Number: ");
+
+    double integer = in.nextInt();
+
+    double number = integer * integer;
+
+    System.out.println("Total: " + number);
   }
 }
