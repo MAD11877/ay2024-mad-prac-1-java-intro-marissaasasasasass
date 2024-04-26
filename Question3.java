@@ -18,6 +18,6 @@ public class Question3
 
     int number = integer * integer;
 
-    System.out.println("Total: " + number);
+    System.out.println(number);
   }
 }
