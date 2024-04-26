@@ -14,9 +14,9 @@ public class Question3
     
     System.out.println("Number: ");
 
-    double integer = in.nextInt();
+    int integer = in.nextInt();
 
-    double number = integer * integer;
+    int number = integer * integer;
 
     System.out.println("Total: " + number);
   }
