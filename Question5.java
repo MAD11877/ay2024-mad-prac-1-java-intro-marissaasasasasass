@@ -31,7 +31,6 @@ public class Question5
 
     ArrayList<Integer> data = new ArrayList<>();
 
-    System.out.print("Length of list: ");
     int length = in.nextInt();
 
     for (int i=0; i<length; i++)
