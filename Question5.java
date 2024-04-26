@@ -33,7 +33,7 @@ public class Question5
 
     int length = in.nextInt();
 
-    for (int i=0; i<length; i++)
+    for (int i=0; i<data.size(); i++)
     {
       int number = in.nextInt();
       data.add(number);
