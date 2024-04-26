@@ -18,6 +18,6 @@ public class Question2
 
     Double BMI = weight / (height * height);
 
-    System.out.println(String.format("%.2f", BMI));  
+    System.out.println(String.format("%.1f", BMI));  
   }
 }
