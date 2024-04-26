@@ -36,7 +36,6 @@ public class Question5
 
     for (int i=0; i<length; i++)
     {
-      System.out.print("Number: ");
       int number = in.nextInt();
       data.add(number);
     }
