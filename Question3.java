@@ -11,8 +11,6 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in);
-    
-    System.out.println("Number: ");
 
     int integer = in.nextInt();
 
