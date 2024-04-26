@@ -69,6 +69,6 @@ public class Question5
             mode = data.get(length - 1);
         }
 
-        System.out.println("Mode: " + mode);
+        System.out.println( mode);
     }
 }
