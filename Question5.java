@@ -46,7 +46,7 @@ public class Question5
         int mode = data.get(0);
         int previous = 1;
         int count = 1;
-        for (int i = 1; i < length; i++) {
+        for (int i = 1; i < data.size(); i++) {
             if (data.get(i).equals(data.get(i - 1))) 
             {
                 count++;
@@ -65,7 +65,7 @@ public class Question5
         // Check for the mode in case it is the last element in the list
         if (count > previous) 
         {
-            mode = data.get(length - 1);
+            mode = data.get(data.size() - 1);
         }
 
         System.out.println( mode);
